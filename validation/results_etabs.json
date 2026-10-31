@@ -1,0 +1,282 @@
+[
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 M3 End I [k-in]",
+  "mcp": 0.0,
+  "published": 0,
+  "diff": 0.0,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 V2 End I [k]",
+  "mcp": -31.250523272831277,
+  "published": -31.25,
+  "diff": 1.674473060075954e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 M3 1/4 point [k-in]",
+  "mcp": 1687.528256732889,
+  "published": 1687.5,
+  "diff": 1.6744730600981583e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 V2 1/4 point [k]",
+  "mcp": -31.250523272831277,
+  "published": -31.25,
+  "diff": 1.674473060075954e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 M3 1/2 point [k-in]",
+  "mcp": 3375.056513465778,
+  "published": 3375,
+  "diff": 1.6744730600981583e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 V2 1/2 point [k]",
+  "mcp": 68.74947672716871,
+  "published": 68.75,
+  "diff": -7.611241182314821e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 M3 3/4 point [k-in]",
+  "mcp": -337.4152298013327,
+  "published": -337.5,
+  "diff": -0.00025117095901416864,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 V2 3/4 point [k]",
+  "mcp": 68.74947672716871,
+  "published": 68.75,
+  "diff": -7.611241182314821e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 M3 End J [k-in]",
+  "mcp": -4049.8869730684432,
+  "published": -4050,
+  "diff": -2.790788433504332e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE1 B1 V2 End J [k]",
+  "mcp": 68.74947672716871,
+  "published": 68.75,
+  "diff": -7.611241182314821e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 M3 End I [k-in]",
+  "mcp": 0.0,
+  "published": 0,
+  "diff": 0.0,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 V2 End I [k]",
+  "mcp": -67.50052745901391,
+  "published": -67.5,
+  "diff": 7.814207613421331e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 M3 1/4 point [k-in]",
+  "mcp": 2430.028482786751,
+  "published": 2430,
+  "diff": 1.1721311420131997e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 V2 1/4 point [k]",
+  "mcp": -22.5005274590139,
+  "published": -22.5,
+  "diff": 2.344262284004195e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 M3 1/2 point [k-in]",
+  "mcp": 2430.056965573501,
+  "published": 2430,
+  "diff": 2.344262284004195e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 V2 1/2 point [k]",
+  "mcp": 22.499472540986105,
+  "published": 22.5,
+  "diff": -2.3442622839819904e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 M3 3/4 point [k-in]",
+  "mcp": 0.08544836025149562,
+  "published": 0,
+  "diff": 0.08544836025149562,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 V2 3/4 point [k]",
+  "mcp": 67.49947254098612,
+  "published": 67.5,
+  "diff": -7.814207613088264e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 M3 End J [k-in]",
+  "mcp": -4859.8860688529985,
+  "published": -4860,
+  "diff": -2.3442622839819904e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 1",
+  "quantity": "CASE2 B1 V2 End J [k]",
+  "mcp": 112.49947254098612,
+  "published": 112.5,
+  "diff": -4.68852456780855e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 6",
+  "quantity": "Eigenvalue mode 1 [rad2/s2] vs ETABS published",
+  "mcp": 0.5896446266616875,
+  "published": 0.58964,
+  "diff": 7.846587218418577e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 6",
+  "quantity": "Eigenvalue mode 1 [rad2/s2] vs Wilson and Habibullah",
+  "mcp": 0.5896446266616875,
+  "published": 0.58954,
+  "diff": 0.00017747169265458496,
+  "ok": true
+ },
+ {
+  "example": "Example 6",
+  "quantity": "Eigenvalue mode 2 [rad2/s2] vs ETABS published",
+  "mcp": 5.531954808214507,
+  "published": 5.53195,
+  "diff": 8.691717219289075e-07,
+  "ok": true
+ },
+ {
+  "example": "Example 6",
+  "quantity": "Eigenvalue mode 2 [rad2/s2] vs Wilson and Habibullah",
+  "mcp": 5.531954808214507,
+  "published": 5.52696,
+  "diff": 0.0009037170912231662,
+  "ok": true
+ },
+ {
+  "example": "Example 6",
+  "quantity": "Eigenvalue mode 3 [rad2/s2] vs ETABS published",
+  "mcp": 16.596162435238114,
+  "published": 16.5962,
+  "diff": -2.2634556035017184e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 6",
+  "quantity": "Eigenvalue mode 3 [rad2/s2] vs Wilson and Habibullah",
+  "mcp": 16.596162435238114,
+  "published": 16.5879,
+  "diff": 0.0004981001355273129,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 1 [s] vs ETABS published",
+  "mcp": 0.22705928137786652,
+  "published": 0.22708,
+  "diff": -9.123930832077853e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 1 [s] vs Wilson and Habibullah",
+  "mcp": 0.22705928137786652,
+  "published": 0.22706,
+  "diff": -3.1648997335098628e-06,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 2 [s] vs ETABS published",
+  "mcp": 0.21561373617624338,
+  "published": 0.21565,
+  "diff": -0.0001681605553286447,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 2 [s] vs Wilson and Habibullah",
+  "mcp": 0.21561373617624338,
+  "published": 0.21563,
+  "diff": -7.542468003807201e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 3 [s] vs ETABS published",
+  "mcp": 0.073346195911521,
+  "published": 0.07335,
+  "diff": -5.186214695296343e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 3 [s] vs Wilson and Habibullah",
+  "mcp": 0.073346195911521,
+  "published": 0.07335,
+  "diff": -5.186214695296343e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 4 [s] vs ETABS published",
+  "mcp": 0.07200453102853964,
+  "published": 0.07201,
+  "diff": -7.594738870109197e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "Period mode 4 [s] vs Wilson and Habibullah",
+  "mcp": 0.07200453102853964,
+  "published": 0.07201,
+  "diff": -7.594738870109197e-05,
+  "ok": true
+ },
+ {
+  "example": "Example 8",
+  "quantity": "RS X displacement, center of mass story 2 [ft]",
+  "mcp": 0.020131152819343807,
+  "published": 0.0201,
+  "diff": 0.0015498915096421317,
+  "ok": true
+ }
+]

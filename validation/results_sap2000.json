@@ -1,0 +1,146 @@
+[
+ {
+  "example": "1-007",
+  "quantity": "Model A : Fz at fixed support [k]",
+  "mcp": 0.0,
+  "published": 0,
+  "diff": 0.0,
+  "ok": true
+ },
+ {
+  "example": "1-007",
+  "quantity": "Model A : My at fixed support [k-ft]",
+  "mcp": 49.999999999998145,
+  "published": 50,
+  "diff": -3.708144902248023e-14,
+  "ok": true
+ },
+ {
+  "example": "1-007",
+  "quantity": "Model B : Fz at fixed support [k]",
+  "mcp": 0.0,
+  "published": 0,
+  "diff": 0.0,
+  "ok": true
+ },
+ {
+  "example": "1-007",
+  "quantity": "Model B : My at fixed support [k-ft]",
+  "mcp": 49.99999999999811,
+  "published": 50,
+  "diff": -3.774758283725532e-14,
+  "ok": true
+ },
+ {
+  "example": "1-007",
+  "quantity": "Model C : Fz at fixed support [k]",
+  "mcp": 5.0,
+  "published": 5,
+  "diff": 0.0,
+  "ok": true
+ },
+ {
+  "example": "1-007",
+  "quantity": "Model C : My at fixed support [k-ft]",
+  "mcp": 0.0,
+  "published": 0,
+  "diff": 0.0,
+  "ok": true
+ },
+ {
+  "example": "1-013",
+  "quantity": "Uz at midspan [in]",
+  "mcp": -0.08933272865442934,
+  "published": -0.08933,
+  "diff": 3.054577890226895e-05,
+  "ok": true
+ },
+ {
+  "example": "1-013",
+  "quantity": "My at midspan [k-in]",
+  "mcp": 17697.894601893426,
+  "published": 17698,
+  "diff": -5.955368209686895e-06,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 1 [s] vs SAP2000 published",
+  "mcp": 0.017351589872450345,
+  "published": 0.01735,
+  "diff": 9.163529973177376e-05,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 1 [s] vs independent",
+  "mcp": 0.017351589872450345,
+  "published": 0.01723,
+  "diff": 0.007056870136410209,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 2 [s] vs SAP2000 published",
+  "mcp": 0.00708413685694207,
+  "published": 0.00708,
+  "diff": 0.0005843018279758638,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 2 [s] vs independent",
+  "mcp": 0.00708413685694207,
+  "published": 0.00704,
+  "diff": 0.006269439906543939,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 3 [s] vs SAP2000 published",
+  "mcp": 0.0028322880123462257,
+  "published": 0.00283,
+  "diff": 0.0008084849279950124,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 3 [s] vs independent",
+  "mcp": 0.0028322880123462257,
+  "published": 0.00281,
+  "diff": 0.007931676991539405,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 4 [s] vs SAP2000 published",
+  "mcp": 0.00221807260343494,
+  "published": 0.00222,
+  "diff": -0.000868196650928077,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 4 [s] vs independent",
+  "mcp": 0.00221807260343494,
+  "published": 0.00219,
+  "diff": 0.012818540381251076,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 5 [s] vs SAP2000 published",
+  "mcp": 0.0019482815217487359,
+  "published": 0.00195,
+  "diff": -0.0008812708980840966,
+  "ok": true
+ },
+ {
+  "example": "2-008",
+  "quantity": "Period mode 5 [s] vs independent",
+  "mcp": 0.0019482815217487359,
+  "published": 0.00193,
+  "diff": 0.009472291061521032,
+  "ok": true
+ }
+]

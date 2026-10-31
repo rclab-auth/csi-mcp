@@ -1,5 +1,7 @@
 # CSI MCP : Claude for SAP2000 and ETABS
 
+![CSI MCP : Claude Desktop talks to SAP2000 and ETABS through two MCP extensions](docs/banner.png)
+
 Two Claude Desktop extensions that let Claude work directly with **SAP2000** and **ETABS** through their official COM API. You talk to Claude in plain language, and it builds or edits the model, runs the analysis and design, and reads tables and results in the program that is open on your computer.
 
 > **Unofficial.** This project is not affiliated with, endorsed by or supported by Computers and Structures, Inc. (CSI). SAP2000 and ETABS are registered trademarks of CSI.
@@ -50,7 +52,11 @@ No Python setup is needed : the dependencies (`mcp`, `comtypes`) are installed a
 ## Installation
 
 1. Download `csi-sap2000-x.y.z.mcpb` and/or `csi-etabs-x.y.z.mcpb` from the [latest release](https://github.com/rclab-auth/csi-mcp/releases/latest).
-2. Double-click the file. Claude Desktop opens it and shows **Install**.
+2. Install it in Claude Desktop, in either of two ways :
+   - Double-click the file, if `.mcpb` files are associated with Claude Desktop.
+   - Otherwise (common on Windows, e.g. with the Microsoft Store edition) : open **Settings → Extensions → Advanced settings → Install Extension…** and choose the file, or drag the file onto the Extensions page.
+   
+   Claude Desktop then shows **Install**.
 3. Start a new chat and ask, for example, *"Connect to ETABS and tell me the stories of the open model."*
 
 To remove an extension : Claude Desktop → Settings → Extensions.
@@ -111,7 +117,21 @@ To run from source in Claude Desktop, add to `%APPDATA%\Claude\claude_desktop_co
 
 ## Verification
 
-CSI verification problem Example 1-001 (a 2D frame under seven load cases) was rebuilt entirely through the extension tools in both programs. The joint displacements match the independent hand-calculated values within 0.02 % (SAP2000) and 0.08 % (ETABS).
+Seven CSI verification problems were rebuilt **from scratch** through the extension tools (no CSI model file opened), analyzed, and compared with the values published in the CSI verification manuals :
+
+| Program | Example | Largest difference from the manual |
+|---|---|---|
+| SAP2000 | 1-001 Frame, general loading (7 load cases) | 0.02 % |
+| SAP2000 | 1-007 End releases | exact |
+| SAP2000 | 1-013 Beam on elastic foundation | 0.00 % |
+| SAP2000 | 2-008 Cantilever plate eigenvalues (shells) | 0.09 % |
+| ETABS | 1-001 Frame, general loading | 0.08 % |
+| ETABS | Example 1 Plane frame, gravity loads | 0.03 % |
+| ETABS | Example 6 Nine-story frame, eigenvalues | 0.00 % |
+| ETABS | Example 8 Two-story 3D frame, response spectrum | 0.15 % |
+
+- **[examples/](examples) :** one page per example, with a prompt you can paste into Claude to reproduce it.
+- **[validation/](validation) :** the scripts that run the examples automatically, and the [full results](validation/RESULTS.md) (53 of 53 comparisons pass).
 
 ## License and author
 
