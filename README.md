@@ -86,6 +86,24 @@ Large tables are written to a CSV file in the temporary folder, and Claude gets 
 - **Program upgrades :** after a SAP2000/ETABS upgrade, the extension notices the new version on its first start. It then regenerates its API wrapper and rebuilds its help index, which takes about a minute once.
 - **Not available in the CSI API :** starting shear wall design in ETABS, and Eurocode 8 auto-seismic loads in ETABS. Use the GUI or the database tables for these.
 
+## Verification
+
+Seven CSI verification problems were rebuilt **from scratch** through the extension tools (no CSI model file opened), analyzed, and compared with the values published in the CSI verification manuals :
+
+| Program | Example | Largest difference from the manual |
+|---|---|---|
+| SAP2000 | 1-001 Frame, general loading (7 load cases) | 0.02 % |
+| SAP2000 | 1-007 End releases | exact |
+| SAP2000 | 1-013 Beam on elastic foundation | 0.00 % |
+| SAP2000 | 2-008 Cantilever plate eigenvalues (shells) | 0.09 % |
+| ETABS | 1-001 Frame, general loading | 0.08 % |
+| ETABS | Example 1 Plane frame, gravity loads | 0.03 % |
+| ETABS | Example 6 Nine-story frame, eigenvalues | 0.00 % |
+| ETABS | Example 8 Two-story 3D frame, response spectrum | 0.15 % |
+
+- **[examples/](examples) :** one page per example, with a prompt you can paste into Claude to reproduce it.
+- **[validation/](validation) :** the scripts that run the examples automatically, and the [full results](validation/RESULTS.md) (53 of 53 comparisons pass).
+
 ## Building from source
 
 ```
@@ -114,24 +132,6 @@ To run from source in Claude Desktop, add to `%APPDATA%\Claude\claude_desktop_co
   "args": ["run", "--script", "C:\\path\\to\\csi-mcp\\ETABS\\src\\etabs_mcp.py"]
 }
 ```
-
-## Verification
-
-Seven CSI verification problems were rebuilt **from scratch** through the extension tools (no CSI model file opened), analyzed, and compared with the values published in the CSI verification manuals :
-
-| Program | Example | Largest difference from the manual |
-|---|---|---|
-| SAP2000 | 1-001 Frame, general loading (7 load cases) | 0.02 % |
-| SAP2000 | 1-007 End releases | exact |
-| SAP2000 | 1-013 Beam on elastic foundation | 0.00 % |
-| SAP2000 | 2-008 Cantilever plate eigenvalues (shells) | 0.09 % |
-| ETABS | 1-001 Frame, general loading | 0.08 % |
-| ETABS | Example 1 Plane frame, gravity loads | 0.03 % |
-| ETABS | Example 6 Nine-story frame, eigenvalues | 0.00 % |
-| ETABS | Example 8 Two-story 3D frame, response spectrum | 0.15 % |
-
-- **[examples/](examples) :** one page per example, with a prompt you can paste into Claude to reproduce it.
-- **[validation/](validation) :** the scripts that run the examples automatically, and the [full results](validation/RESULTS.md) (53 of 53 comparisons pass).
 
 ## License and author
 
