@@ -1,0 +1,35 @@
+{
+  "manifest_version": "0.4",
+  "name": "csi-sap2000",
+  "display_name": "SAP2000 (unofficial)",
+  "version": "1.0.0",
+  "description": "Lets Claude drive SAP2000 through the CSI API: build and edit models, run analyses and design, read database tables and results. Unofficial, not affiliated with Computers and Structures, Inc.",
+  "long_description": "Connects Claude to a local SAP2000 installation through its COM API. Claude can attach to the running SAP2000 window or start a new instance, build or edit the model, run the analysis and design, and read any database table or Results function. Supports concrete, steel, cold-formed and aluminum design runs. A generic call_api tool reaches every function of the API, and search_api/api_doc read the API help file of your own installation. Requires Windows and a licensed SAP2000. Unofficial tool, not affiliated with or endorsed by Computers and Structures, Inc.",
+  "author": {
+    "name": "Vassilis K. Papanikolaou",
+    "url": "https://github.com/rclab-auth"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rclab-auth/csi-mcp"
+  },
+  "homepage": "https://github.com/rclab-auth/csi-mcp",
+  "license": "MIT",
+  "icon": "icon.png",
+  "server": {
+    "type": "uv",
+    "entry_point": "src/sap2000_mcp.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": ["run", "--directory", "${__dirname}", "src/sap2000_mcp.py"]
+    }
+  },
+  "tools_generated": true,
+  "compatibility": {
+    "platforms": ["win32"],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  },
+  "keywords": ["sap2000", "structural-analysis", "finite-elements", "csi", "structural-engineering"]
+}

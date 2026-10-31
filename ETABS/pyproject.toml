@@ -1,0 +1,9 @@
+[project]
+name = "csi-etabs"
+version = "1.0.0"
+description = "Unofficial MCP server for ETABS (CSI API)"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.9,<2",
+    "comtypes>=1.4",
+]
