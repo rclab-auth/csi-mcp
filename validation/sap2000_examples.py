@@ -4,8 +4,9 @@
 import asyncio
 import os
 from verif_client import HERE, compare, save, server
+from example_1_001 import example_1_001
 
-print('\nSAP2000 verification examples (1-007, 1-013, 2-008) through the MCP server')
+print('\nSAP2000 verification examples (1-001, 1-007, 1-013, 2-008) through the MCP server')
 print('V.K. Papanikolaou, Assoc. Prof. AUTh')
 print('Last updated : 31/10/2026\n')
 
@@ -137,6 +138,7 @@ async def main():
         print('connect :', (await s.tool('connect', mode='start', visible=False))['program_version'], flush=True)
 
         try:
+            await example_1_001(s, ROWS, OUT, '.sdb')
             await example_1_007(s)
             await example_1_013(s)
             await example_2_008(s)

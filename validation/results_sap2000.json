@@ -1,5 +1,61 @@
 [
  {
+  "example": "1-001",
+  "quantity": "Case 1 : Uz at the end of the inclined member [in]",
+  "mcp": -0.026389708333499594,
+  "published": -0.02639,
+  "diff": -1.1052159924473948e-05,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 2 : Uz at the end of the inclined member [in]",
+  "mcp": 0.0629596111115078,
+  "published": 0.06296,
+  "diff": -6.1767549587310455e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 3 : Uz at the end of the inclined member [in]",
+  "mcp": 0.0629596111115078,
+  "published": 0.06296,
+  "diff": -6.1767549587310455e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 4 : Uz at the end of the inclined member [in]",
+  "mcp": -0.2963018518537188,
+  "published": -0.2963,
+  "diff": 6.249928176993436e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 5 : Ux at the knee joint (0, 0, 10 ft) [in]",
+  "mcp": 0.3125018518538204,
+  "published": 0.3125,
+  "diff": 5.92593222537019e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 6 : Ux at the knee joint (0, 0, 10 ft) [in]",
+  "mcp": 0.11555582518591315,
+  "published": 0.11556,
+  "diff": -3.612680933584578e-05,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 7 : Ux at the knee joint (0, 0, 10 ft) [in]",
+  "mcp": 0.006511371527818799,
+  "published": 0.00651,
+  "diff": 0.0002106801564976113,
+  "ok": true
+ },
+ {
   "example": "1-007",
   "quantity": "Model A : Fz at fixed support [k]",
   "mcp": 0.0,
@@ -66,81 +122,81 @@
  {
   "example": "2-008",
   "quantity": "Period mode 1 [s] vs SAP2000 published",
-  "mcp": 0.017351589872450345,
+  "mcp": 0.01735158987265636,
   "published": 0.01735,
-  "diff": 9.163529973177376e-05,
+  "diff": 9.163531160583105e-05,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 1 [s] vs independent",
-  "mcp": 0.017351589872450345,
+  "mcp": 0.01735158987265636,
   "published": 0.01723,
-  "diff": 0.007056870136410209,
+  "diff": 0.007056870148366867,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 2 [s] vs SAP2000 published",
-  "mcp": 0.00708413685694207,
+  "mcp": 0.007084136856933288,
   "published": 0.00708,
-  "diff": 0.0005843018279758638,
+  "diff": 0.0005843018267355227,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 2 [s] vs independent",
-  "mcp": 0.00708413685694207,
+  "mcp": 0.007084136856933288,
   "published": 0.00704,
-  "diff": 0.006269439906543939,
+  "diff": 0.006269439905296492,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 3 [s] vs SAP2000 published",
-  "mcp": 0.0028322880123462257,
+  "mcp": 0.002832288012346401,
   "published": 0.00283,
-  "diff": 0.0008084849279950124,
+  "diff": 0.0008084849280567408,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 3 [s] vs independent",
-  "mcp": 0.0028322880123462257,
+  "mcp": 0.002832288012346401,
   "published": 0.00281,
-  "diff": 0.007931676991539405,
+  "diff": 0.0079316769916018,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 4 [s] vs SAP2000 published",
-  "mcp": 0.00221807260343494,
+  "mcp": 0.002218072603434941,
   "published": 0.00222,
-  "diff": -0.000868196650928077,
+  "diff": -0.0008681966509275219,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 4 [s] vs independent",
-  "mcp": 0.00221807260343494,
+  "mcp": 0.002218072603434941,
   "published": 0.00219,
-  "diff": 0.012818540381251076,
+  "diff": 0.01281854038125152,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 5 [s] vs SAP2000 published",
-  "mcp": 0.0019482815217487359,
+  "mcp": 0.0019482815217484902,
   "published": 0.00195,
-  "diff": -0.0008812708980840966,
+  "diff": -0.000881270898210107,
   "ok": true
  },
  {
   "example": "2-008",
   "quantity": "Period mode 5 [s] vs independent",
-  "mcp": 0.0019482815217487359,
+  "mcp": 0.0019482815217484902,
   "published": 0.00193,
-  "diff": 0.009472291061521032,
+  "diff": 0.0094722910613938,
   "ok": true
  }
 ]

@@ -1,9 +1,10 @@
 # Examples : CSI verification problems rebuilt through Claude
 
-Six verification problems from the CSI manuals, rebuilt **from scratch** through the extension tools (no CSI model file is opened). Each page has a prompt you can paste into Claude Desktop, the values published in the manual, and the results we obtained.
+Seven verification problems from the CSI manuals, rebuilt **from scratch** through the extension tools (no CSI model file is opened). Each page has a prompt you can paste into Claude Desktop, the values published in the manual, and the results we obtained.
 
 | Program | Example | Tests | Result |
 |---|---|---|---|
+| SAP2000 and ETABS | [1-001 Frame, general loading](SAP2000%20and%20ETABS%201-001%20Frame%20general%20loading.md) | frames, 7 load types (point, distributed, trapezoidal, local axes) | ≤ 0.08 % |
 | SAP2000 | [1-007 End releases](SAP2000%201-007%20End%20releases.md) | frame releases, support reactions | exact |
 | SAP2000 | [1-013 Beam on elastic foundation](SAP2000%201-013%20Beam%20on%20elastic%20foundation.md) | line springs, frame auto-mesh | exact |
 | SAP2000 | [2-008 Cantilever plate eigenvalues](SAP2000%202-008%20Cantilever%20plate%20eigenvalues.md) | shells, area auto-mesh, active DOFs, modal | ≤ 0.09 % |
@@ -11,7 +12,7 @@ Six verification problems from the CSI manuals, rebuilt **from scratch** through
 | ETABS | [Example 6 Nine-story frame eigenvalues](ETABS%2006%20Nine-story%20frame%20eigenvalues.md) | stories, diaphragms, point masses, eigen | 0.00 % |
 | ETABS | [Example 8 Two-story 3D frame response spectrum](ETABS%2008%20Two-story%203D%20frame%20response%20spectrum.md) | 3D frame, user sections, database tables, response spectrum | ≤ 0.15 % |
 
-Full table of all 53 comparisons : [validation/RESULTS.md](../validation/RESULTS.md).
+Full table of all 67 comparisons : [validation/RESULTS.md](../validation/RESULTS.md).
 
 ## How the prompts relate to the validation
 

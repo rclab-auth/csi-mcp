@@ -1,5 +1,61 @@
 [
  {
+  "example": "1-001",
+  "quantity": "Case 1 : Uz at the end of the inclined member [in]",
+  "mcp": -0.02641139257979737,
+  "published": -0.02639,
+  "diff": 0.0008106320499192687,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 2 : Uz at the end of the inclined member [in]",
+  "mcp": 0.06295961111187433,
+  "published": 0.06296,
+  "diff": -6.176749137165594e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 3 : Uz at the end of the inclined member [in]",
+  "mcp": 0.06295961111187433,
+  "published": 0.06296,
+  "diff": -6.176749137165594e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 4 : Uz at the end of the inclined member [in]",
+  "mcp": -0.2963018518554431,
+  "published": -0.2963,
+  "diff": 6.2499339963384415e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 5 : Ux at the knee joint (0, 0, 10 ft) [in]",
+  "mcp": 0.31250185185563956,
+  "published": 0.3125,
+  "diff": 5.925938046491552e-06,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 6 : Ux at the knee joint (0, 0, 10 ft) [in]",
+  "mcp": 0.11555582518658579,
+  "published": 0.11556,
+  "diff": -3.6126803515168504e-05,
+  "ok": true
+ },
+ {
+  "example": "1-001",
+  "quantity": "Case 7 : Ux at the knee joint (0, 0, 10 ft) [in]",
+  "mcp": 0.006511371527856692,
+  "published": 0.00651,
+  "diff": 0.00021068016231828857,
+  "ok": true
+ },
+ {
   "example": "Example 1",
   "quantity": "CASE1 B1 M3 End I [k-in]",
   "mcp": 0.0,
@@ -178,105 +234,105 @@
  {
   "example": "Example 6",
   "quantity": "Eigenvalue mode 2 [rad2/s2] vs ETABS published",
-  "mcp": 5.531954808214507,
+  "mcp": 5.531954808214513,
   "published": 5.53195,
-  "diff": 8.691717219289075e-07,
+  "diff": 8.691717230391305e-07,
   "ok": true
  },
  {
   "example": "Example 6",
   "quantity": "Eigenvalue mode 2 [rad2/s2] vs Wilson and Habibullah",
-  "mcp": 5.531954808214507,
+  "mcp": 5.531954808214513,
   "published": 5.52696,
-  "diff": 0.0009037170912231662,
+  "diff": 0.0009037170912242765,
   "ok": true
  },
  {
   "example": "Example 6",
   "quantity": "Eigenvalue mode 3 [rad2/s2] vs ETABS published",
-  "mcp": 16.596162435238114,
+  "mcp": 16.59616243523804,
   "published": 16.5962,
-  "diff": -2.2634556035017184e-06,
+  "diff": -2.2634556079426105e-06,
   "ok": true
  },
  {
   "example": "Example 6",
   "quantity": "Eigenvalue mode 3 [rad2/s2] vs Wilson and Habibullah",
-  "mcp": 16.596162435238114,
+  "mcp": 16.59616243523804,
   "published": 16.5879,
-  "diff": 0.0004981001355273129,
+  "diff": 0.00049810013552265,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 1 [s] vs ETABS published",
-  "mcp": 0.22705928137786652,
+  "mcp": 0.22705928137786627,
   "published": 0.22708,
-  "diff": -9.123930832077853e-05,
+  "diff": -9.123930832188876e-05,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 1 [s] vs Wilson and Habibullah",
-  "mcp": 0.22705928137786652,
+  "mcp": 0.22705928137786627,
   "published": 0.22706,
-  "diff": -3.1648997335098628e-06,
+  "diff": -3.1648997346200858e-06,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 2 [s] vs ETABS published",
-  "mcp": 0.21561373617624338,
+  "mcp": 0.21561373617624263,
   "published": 0.21565,
-  "diff": -0.0001681605553286447,
+  "diff": -0.00016816055533219743,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 2 [s] vs Wilson and Habibullah",
-  "mcp": 0.21561373617624338,
+  "mcp": 0.21561373617624263,
   "published": 0.21563,
-  "diff": -7.542468003807201e-05,
+  "diff": -7.54246800415137e-05,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 3 [s] vs ETABS published",
-  "mcp": 0.073346195911521,
+  "mcp": 0.07334619591152099,
   "published": 0.07335,
-  "diff": -5.186214695296343e-05,
+  "diff": -5.186214695307445e-05,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 3 [s] vs Wilson and Habibullah",
-  "mcp": 0.073346195911521,
+  "mcp": 0.07334619591152099,
   "published": 0.07335,
-  "diff": -5.186214695296343e-05,
+  "diff": -5.186214695307445e-05,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 4 [s] vs ETABS published",
-  "mcp": 0.07200453102853964,
+  "mcp": 0.07200453102853983,
   "published": 0.07201,
-  "diff": -7.594738870109197e-05,
+  "diff": -7.594738869842743e-05,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "Period mode 4 [s] vs Wilson and Habibullah",
-  "mcp": 0.07200453102853964,
+  "mcp": 0.07200453102853983,
   "published": 0.07201,
-  "diff": -7.594738870109197e-05,
+  "diff": -7.594738869842743e-05,
   "ok": true
  },
  {
   "example": "Example 8",
   "quantity": "RS X displacement, center of mass story 2 [ft]",
-  "mcp": 0.020131152819343807,
+  "mcp": 0.02013115281934376,
   "published": 0.0201,
-  "diff": 0.0015498915096421317,
+  "diff": 0.0015498915096396892,
   "ok": true
  }
 ]

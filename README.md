@@ -13,7 +13,10 @@ Two Claude Desktop extensions that let Claude work directly with **SAP2000** and
 | `csi-sap2000` | SAP2000 | **v26.2.0** (API 2.006) | v23.0 and later | v22 and older |
 | `csi-etabs` | ETABS | **v22.3.0** and **v23.2.0** (API 2.004 and 2.014) | v18.0 and later | v17 and older |
 
-- **Tested :** the full test (CSI verification problem Example 1-001, see Verification) passed on these versions.
+- **Tested :** the CSI verification examples of the [Verification](#verification) section passed on these versions :
+  - **SAP2000 26.2.0 :** all four SAP2000 examples.
+  - **ETABS 23.2.0 :** all four ETABS examples.
+  - **ETABS 22.3.0 :** Example 1-001 only, because this version was replaced by v23 before the other examples were added.
 - **Expected to work :** these versions have everything the extension relies on, but have not been tested yet. Reports are welcome as GitHub issues.
   - **SAP2000 :** the database tables API, on which most tools rest, exists since SAP2000 v23.0.0. Attaching to a specific window by process ID needs v24.1.0 or later; attaching to the active window works on all supported versions.
   - **ETABS :** the `ETABSv1` API library and the database tables exist since ETABS v18.0.
@@ -27,7 +30,9 @@ Two Claude Desktop extensions that let Claude work directly with **SAP2000** and
 - **Build or edit models :** materials, sections, frames, areas, restraints, load patterns, loads, combinations, and anything else the CSI API offers.
 - **Analysis and design :**
   - run the analysis, all or selected load cases
-  - start concrete, steel, composite, slab or shell design with the code and preferences already set in the model
+  - start design with the code and preferences already set in the model :
+    - **SAP2000 :** concrete, steel, cold-formed steel and aluminum frames
+    - **ETABS :** concrete and steel frames, composite beams and columns, concrete slabs, and concrete shells (v23 and later)
 - **Database tables :**
   - read any of them (input, analysis results, design results)
   - edit importable tables and apply them back to the model, with the full import log
@@ -82,9 +87,15 @@ Large tables are written to a CSV file in the temporary folder, and Claude gets 
   - The model must be saved before an analysis.
   - `save_model` always needs an explicit path.
   - Closing the program (`disconnect` with `close_app`) is allowed only for an instance the extension started itself; a window you opened is never closed.
-- **Locked models :** after an analysis the model is locked. Editing it unlocks it and deletes the results, as in the GUI.
+- **Locked models :** after an analysis the model is locked, as in the GUI. Before editing it, Claude unlocks it (`SetModelIsLocked`), which deletes the analysis results.
 - **Program upgrades :** after a SAP2000/ETABS upgrade, the extension notices the new version on its first start. It then regenerates its API wrapper and rebuilds its help index, which takes about a minute once.
-- **Not available in the CSI API :** starting shear wall design in ETABS, and Eurocode 8 auto-seismic loads in ETABS. Use the GUI or the database tables for these.
+- **Not available in the ETABS API :**
+  - Starting shear wall design : run it in the GUI. Claude can then read the results.
+  - Eurocode 8 auto-seismic loads and user response spectrum functions : define them through the database tables (`edit_table`), which Claude can do.
+- **ETABS habits worth knowing** (details in [examples](examples/README.md#lessons-from-the-examples)) :
+  - ETABS adds rigid end offsets automatically from the member depths.
+  - Lateral masses are lumped at the story levels, so models need stories at the floors.
+  - A new model already contains a diaphragm named `D1`.
 
 ## Verification
 
@@ -102,7 +113,7 @@ Seven CSI verification problems were rebuilt **from scratch** through the extens
 | ETABS | Example 8 Two-story 3D frame, response spectrum | 0.15 % |
 
 - **[examples/](examples) :** one page per example, with a prompt you can paste into Claude to reproduce it.
-- **[validation/](validation) :** the scripts that run the examples automatically, and the [full results](validation/RESULTS.md) (53 of 53 comparisons pass).
+- **[validation/](validation) :** the scripts that run the examples automatically, and the [full results](validation/RESULTS.md) (67 of 67 comparisons pass).
 
 ## Building from source
 
@@ -110,6 +121,9 @@ Seven CSI verification problems were rebuilt **from scratch** through the extens
 common/          shared code : COM layer, help index, MCP tools
 SAP2000/         entry point, manifest.json, pyproject.toml, icon
 ETABS/           entry point, manifest.json, pyproject.toml, icon
+examples/        one page per verification example, with a prompt for Claude
+validation/      scripts that run the examples through the tools, and the results
+docs/            banner
 build.ps1        builds dist/*.mcpb (needs Node.js for npx @anthropic-ai/mcpb)
 ```
 
@@ -124,7 +138,7 @@ Self-test without starting the program :
 uv run --script SAP2000\src\sap2000_mcp.py --selftest
 ```
 
-To run from source in Claude Desktop, add to `%APPDATA%\Claude\claude_desktop_config.json` :
+To run from source in Claude Desktop, add an entry to its configuration file. The easiest way to open it is **Settings → Developer → Edit config**, since its location differs between editions : `%APPDATA%\Claude\claude_desktop_config.json`, or under `%LOCALAPPDATA%\Packages\Claude_…\LocalCache\Roaming\Claude\` for the Microsoft Store edition. Don't keep a source entry and the installed extension at the same time, or the tools appear twice.
 
 ```json
 "csi-etabs": {

@@ -2,12 +2,19 @@
 
 Each CSI verification example was rebuilt from scratch through the MCP tools (no CSI model file was opened), analyzed, and its results were compared with the values published in the CSI verification manuals (`Manuals\Verification` of each installation). See [examples](../examples) for the prompts.
 
-**53 of 53 comparisons pass.**
+**67 of 67 comparisons pass.**
 
 ## SAP2000 26.2.0
 
 | Example | Quantity | MCP | Published | Difference | |
 |---|---|---:|---:|---:|---|
+| 1-001 | Case 1 : Uz at the end of the inclined member [in] | -0.0263897 | -0.02639 | -0.00 % | ✅ |
+| 1-001 | Case 2 : Uz at the end of the inclined member [in] | 0.0629596 | 0.06296 | -0.00 % | ✅ |
+| 1-001 | Case 3 : Uz at the end of the inclined member [in] | 0.0629596 | 0.06296 | -0.00 % | ✅ |
+| 1-001 | Case 4 : Uz at the end of the inclined member [in] | -0.296302 | -0.2963 | +0.00 % | ✅ |
+| 1-001 | Case 5 : Ux at the knee joint (0, 0, 10 ft) [in] | 0.312502 | 0.3125 | +0.00 % | ✅ |
+| 1-001 | Case 6 : Ux at the knee joint (0, 0, 10 ft) [in] | 0.115556 | 0.11556 | -0.00 % | ✅ |
+| 1-001 | Case 7 : Ux at the knee joint (0, 0, 10 ft) [in] | 0.00651137 | 0.00651 | +0.02 % | ✅ |
 | 1-007 | Model A : Fz at fixed support [k] | 0 | 0 | abs 0 | ✅ |
 | 1-007 | Model A : My at fixed support [k-ft] | 50 | 50 | -0.00 % | ✅ |
 | 1-007 | Model B : Fz at fixed support [k] | 0 | 0 | abs 0 | ✅ |
@@ -31,6 +38,13 @@ Each CSI verification example was rebuilt from scratch through the MCP tools (no
 
 | Example | Quantity | MCP | Published | Difference | |
 |---|---|---:|---:|---:|---|
+| 1-001 | Case 1 : Uz at the end of the inclined member [in] | -0.0264114 | -0.02639 | +0.08 % | ✅ |
+| 1-001 | Case 2 : Uz at the end of the inclined member [in] | 0.0629596 | 0.06296 | -0.00 % | ✅ |
+| 1-001 | Case 3 : Uz at the end of the inclined member [in] | 0.0629596 | 0.06296 | -0.00 % | ✅ |
+| 1-001 | Case 4 : Uz at the end of the inclined member [in] | -0.296302 | -0.2963 | +0.00 % | ✅ |
+| 1-001 | Case 5 : Ux at the knee joint (0, 0, 10 ft) [in] | 0.312502 | 0.3125 | +0.00 % | ✅ |
+| 1-001 | Case 6 : Ux at the knee joint (0, 0, 10 ft) [in] | 0.115556 | 0.11556 | -0.00 % | ✅ |
+| 1-001 | Case 7 : Ux at the knee joint (0, 0, 10 ft) [in] | 0.00651137 | 0.00651 | +0.02 % | ✅ |
 | Example 1 | CASE1 B1 M3 End I [k-in] | 0 | 0 | abs 0 | ✅ |
 | Example 1 | CASE1 B1 V2 End I [k] | -31.2505 | -31.25 | +0.00 % | ✅ |
 | Example 1 | CASE1 B1 M3 1/4 point [k-in] | 1687.53 | 1687.5 | +0.00 % | ✅ |

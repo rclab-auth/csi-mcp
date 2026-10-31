@@ -5,8 +5,9 @@ import asyncio
 import os
 import sys
 from verif_client import HERE, compare, save, server
+from example_1_001 import example_1_001
 
-print('\nETABS verification examples (1, 6, 8) through the MCP server')
+print('\nETABS verification examples (1-001, 1, 6, 8) through the MCP server')
 print('V.K. Papanikolaou, Assoc. Prof. AUTh')
 print('Last updated : 31/10/2026\n')
 
@@ -272,7 +273,7 @@ async def main():
 
         try:
 
-            todo = {'1': example_1, '6': example_6, '8': example_8}
+            todo = {'1-001': lambda s_: example_1_001(s_, ROWS, OUT, '.edb'), '1': example_1, '6': example_6, '8': example_8}
 
             for ex in [todo[k] for k in (sys.argv[1:] or todo)]:
 
@@ -280,7 +281,7 @@ async def main():
                     await ex(s)
 
                 except Exception as e:
-                    print(f'  ERROR in {ex.__name__} : {e}', flush=True)
+                    print(f'  ERROR in {getattr(ex, "__name__", "1-001")} : {e}', flush=True)
 
         finally:
             await s.tool('disconnect', close_app=True)
